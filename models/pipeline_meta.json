@@ -1,0 +1,76 @@
+{
+  "train_median": {
+    "cholesterol": 238.0,
+    "resting bp s": 130.0
+  },
+  "iqr_bounds": {
+    "age": [
+      26.0,
+      82.0
+    ],
+    "resting bp s": [
+      88.5,
+      172.5
+    ],
+    "cholesterol": [
+      132.875,
+      351.875
+    ],
+    "max heart rate": [
+      63.5,
+      211.5
+    ],
+    "oldpeak": [
+      -2.25,
+      3.75
+    ]
+  },
+  "scale_cols": [
+    "age",
+    "resting bp s",
+    "cholesterol",
+    "max heart rate",
+    "oldpeak"
+  ],
+  "cat_cols": [
+    "sex",
+    "chest pain type",
+    "fasting blood sugar",
+    "resting ecg",
+    "exercise angina",
+    "ST slope"
+  ],
+  "expected_cols": [
+    "ST slope_1",
+    "ST slope_2",
+    "ST slope_3",
+    "age",
+    "chest pain type_2",
+    "chest pain type_3",
+    "chest pain type_4",
+    "cholesterol",
+    "exercise angina_1",
+    "fasting blood sugar_1",
+    "max heart rate",
+    "oldpeak",
+    "resting bp s",
+    "resting ecg_1",
+    "resting ecg_2",
+    "sex_1"
+  ],
+  "scaler_mean": [
+    53.84877384196185,
+    132.87465940054497,
+    245.0558583106267,
+    136.3773841961853,
+    0.8651226158038147
+  ],
+  "scaler_std": [
+    9.43414098939104,
+    18.06800914833354,
+    54.21433784095364,
+    25.81469451887964,
+    1.0562433683035626
+  ],
+  "best_model": "KNN Tuned {'metric': 'manhattan', 'n_neighbors': 9, 'weights': 'uniform'}"
+}

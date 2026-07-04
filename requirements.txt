@@ -1,0 +1,19 @@
+# Core ML — tanpa pin versi agar pip pakai binary wheel yang tersedia
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+joblib
+scipy
+
+# Visualisasi
+matplotlib
+seaborn
+
+# Web apps
+streamlit
+gradio
+
+# Notebook
+jupyter
+ipykernel

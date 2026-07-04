@@ -1,0 +1,133 @@
+{
+  "_meta": {
+    "description": "Classification report per model pada test set (184 sampel, stratified 80-20 split, random_state=42)",
+    "dataset": "Heart Disease — Mendeley DOI:10.17632/jtwbww4z9k.1",
+    "classes": {"0": "Sehat", "1": "Sakit"},
+    "metrics": "precision, recall, f1-score, support",
+    "generated_from": "notebooks/uas_ml_heartdisease_knn_nb_svm_optimization.ipynb"
+  },
+
+  "Baseline (Dummy)": {
+    "Sehat (0)": {"precision": 0.0,    "recall": 0.0,    "f1-score": 0.0,    "support": 82},
+    "Sakit (1)": {"precision": 0.5543, "recall": 1.0,    "f1-score": 0.7133, "support": 102},
+    "accuracy": 0.5543,
+    "macro avg":    {"precision": 0.2772, "recall": 0.5,    "f1-score": 0.3567, "support": 184},
+    "weighted avg": {"precision": 0.3073, "recall": 0.5543, "f1-score": 0.3951, "support": 184},
+    "acc_train": 0.5531,
+    "acc_test":  0.5543,
+    "bal_acc":   0.5,
+    "auc_roc":   0.5,
+    "overfitting": false
+  },
+
+  "KNN": {
+    "Sehat (0)": {"precision": 0.7986, "recall": 0.8293, "f1-score": 0.8136, "support": 82},
+    "Sakit (1)": {"precision": 0.8598, "recall": 0.902,  "f1-score": 0.8804, "support": 102},
+    "accuracy": 0.8641,
+    "macro avg":    {"precision": 0.8292, "recall": 0.8657, "f1-score": 0.8470, "support": 184},
+    "weighted avg": {"precision": 0.8345, "recall": 0.8641, "f1-score": 0.8490, "support": 184},
+    "acc_train": 0.8733,
+    "acc_test":  0.8641,
+    "bal_acc":   0.8595,
+    "auc_roc":   0.9173,
+    "overfitting": false
+  },
+
+  "KNN_Tuned": {
+    "Sehat (0)": {"precision": 0.8108, "recall": 0.7317, "f1-score": 0.7692, "support": 82},
+    "Sakit (1)": {"precision": 0.8545, "recall": 0.9216, "f1-score": 0.8868, "support": 102},
+    "accuracy": 0.8696,
+    "macro avg":    {"precision": 0.8327, "recall": 0.8267, "f1-score": 0.8280, "support": 184},
+    "weighted avg": {"precision": 0.8361, "recall": 0.8696, "f1-score": 0.8512, "support": 184},
+    "acc_train": 0.8610,
+    "acc_test":  0.8696,
+    "bal_acc":   0.8632,
+    "auc_roc":   0.9231,
+    "best_params": {"metric": "manhattan", "n_neighbors": 9, "weights": "uniform"},
+    "overfitting": false,
+    "is_best_model": true
+  },
+
+  "GaussianNB": {
+    "Sehat (0)": {"precision": 0.8431, "recall": 0.7927, "f1-score": 0.8171, "support": 82},
+    "Sakit (1)": {"precision": 0.8455, "recall": 0.9118, "f1-score": 0.8774, "support": 102},
+    "accuracy": 0.8587,
+    "macro avg":    {"precision": 0.8443, "recall": 0.8522, "f1-score": 0.8472, "support": 184},
+    "weighted avg": {"precision": 0.8445, "recall": 0.8587, "f1-score": 0.8509, "support": 184},
+    "acc_train": 0.8406,
+    "acc_test":  0.8587,
+    "bal_acc":   0.8522,
+    "auc_roc":   0.8953,
+    "overfitting": false
+  },
+
+  "NB_Tuned": {
+    "Sehat (0)": {"precision": 0.8431, "recall": 0.7927, "f1-score": 0.8171, "support": 82},
+    "Sakit (1)": {"precision": 0.8455, "recall": 0.9118, "f1-score": 0.8774, "support": 102},
+    "accuracy": 0.8587,
+    "macro avg":    {"precision": 0.8443, "recall": 0.8522, "f1-score": 0.8472, "support": 184},
+    "weighted avg": {"precision": 0.8445, "recall": 0.8587, "f1-score": 0.8509, "support": 184},
+    "acc_train": 0.8406,
+    "acc_test":  0.8587,
+    "bal_acc":   0.8522,
+    "auc_roc":   0.8953,
+    "best_params": {"var_smoothing": 1e-9},
+    "overfitting": false
+  },
+
+  "SVM": {
+    "Sehat (0)": {"precision": 0.9375, "recall": 0.7317, "f1-score": 0.8222, "support": 82},
+    "Sakit (1)": {"precision": 0.8115, "recall": 0.9706, "f1-score": 0.8839, "support": 102},
+    "accuracy": 0.8587,
+    "macro avg":    {"precision": 0.8745, "recall": 0.8511, "f1-score": 0.8531, "support": 184},
+    "weighted avg": {"precision": 0.8683, "recall": 0.8587, "f1-score": 0.8569, "support": 184},
+    "acc_train": 0.8965,
+    "acc_test":  0.8587,
+    "bal_acc":   0.8451,
+    "auc_roc":   0.9360,
+    "overfitting": false
+  },
+
+  "SVM_Tuned": {
+    "Sehat (0)": {"precision": 0.9375, "recall": 0.7317, "f1-score": 0.8222, "support": 82},
+    "Sakit (1)": {"precision": 0.8115, "recall": 0.9706, "f1-score": 0.8839, "support": 102},
+    "accuracy": 0.8587,
+    "macro avg":    {"precision": 0.8745, "recall": 0.8511, "f1-score": 0.8531, "support": 184},
+    "weighted avg": {"precision": 0.8683, "recall": 0.8587, "f1-score": 0.8569, "support": 184},
+    "acc_train": 0.8747,
+    "acc_test":  0.8587,
+    "bal_acc":   0.8451,
+    "auc_roc":   0.9429,
+    "best_params": {"C": 0.1, "gamma": "scale", "kernel": "rbf"},
+    "overfitting": false
+  },
+
+  "DecisionTree": {
+    "Sehat (0)": {"precision": 0.7179, "recall": 0.6829, "f1-score": 0.7000, "support": 82},
+    "Sakit (1)": {"precision": 0.7000, "recall": 0.8235, "f1-score": 0.7568, "support": 102},
+    "accuracy": 0.7065,
+    "macro avg":    {"precision": 0.7090, "recall": 0.7532, "f1-score": 0.7284, "support": 184},
+    "weighted avg": {"precision": 0.7075, "recall": 0.7065, "f1-score": 0.7322, "support": 184},
+    "acc_train": 1.0,
+    "acc_test":  0.7065,
+    "bal_acc":   0.6923,
+    "auc_roc":   0.6923,
+    "overfitting": true,
+    "note": "Overfit parah — Acc Train=1.0, Acc Test=0.7065"
+  },
+
+  "DT_Tuned": {
+    "Sehat (0)": {"precision": 0.3333, "recall": 0.0244, "f1-score": 0.0455, "support": 82},
+    "Sakit (1)": {"precision": 0.5696, "recall": 0.9706, "f1-score": 0.7176, "support": 102},
+    "accuracy": 0.5652,
+    "macro avg":    {"precision": 0.4515, "recall": 0.4975, "f1-score": 0.3816, "support": 184},
+    "weighted avg": {"precision": 0.4692, "recall": 0.5652, "f1-score": 0.4255, "support": 184},
+    "acc_train": 0.8624,
+    "acc_test":  0.5652,
+    "bal_acc":   0.5265,
+    "auc_roc":   0.7431,
+    "best_params": {"criterion": "gini", "max_depth": 3, "min_samples_leaf": 8, "min_samples_split": 2},
+    "overfitting": false,
+    "note": "Setelah tuning overfit hilang tapi Acc Test rendah (0.5652) — DT tidak cocok untuk dataset ini"
+  }
+}

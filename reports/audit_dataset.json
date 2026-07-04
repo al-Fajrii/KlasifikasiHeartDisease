@@ -1,0 +1,89 @@
+{
+  "dimensi": {
+    "baris": 1190,
+    "kolom": 12
+  },
+  "fitur_prediktor": 11,
+  "tipe_data": {
+    "age": "int64",
+    "sex": "int64",
+    "chest_pain_type": "int64",
+    "resting_bp_s": "int64",
+    "cholesterol": "int64",
+    "fasting_blood_sugar": "int64",
+    "resting_ecg": "int64",
+    "max_heart_rate": "int64",
+    "exercise_angina": "int64",
+    "oldpeak": "float64",
+    "st_slope": "int64",
+    "target": "int64"
+  },
+  "missing_values": {
+    "age": 0,
+    "sex": 0,
+    "chest_pain_type": 0,
+    "resting_bp_s": 0,
+    "cholesterol": 0,
+    "fasting_blood_sugar": 0,
+    "resting_ecg": 0,
+    "max_heart_rate": 0,
+    "exercise_angina": 0,
+    "oldpeak": 0,
+    "st_slope": 0,
+    "target": 0
+  },
+  "duplikat": 272,
+  "distribusi_target": {
+    "1": 629,
+    "0": 561
+  },
+  "outlier_numerik": {
+    "age": {
+      "Q1": 47.0,
+      "Q3": 60.0,
+      "IQR": 13.0,
+      "Lower Fence": 27.5,
+      "Upper Fence": 79.5,
+      "N Outlier": 0,
+      "Outlier (%)": 0.0
+    },
+    "resting_bp_s": {
+      "Q1": 120.0,
+      "Q3": 140.0,
+      "IQR": 20.0,
+      "Lower Fence": 90.0,
+      "Upper Fence": 170.0,
+      "N Outlier": 37,
+      "Outlier (%)": 3.11
+    },
+    "cholesterol": {
+      "Q1": 188.0,
+      "Q3": 269.75,
+      "IQR": 81.75,
+      "Lower Fence": 65.38,
+      "Upper Fence": 392.38,
+      "N Outlier": 193,
+      "Outlier (%)": 16.22
+    },
+    "max_heart_rate": {
+      "Q1": 121.0,
+      "Q3": 160.0,
+      "IQR": 39.0,
+      "Lower Fence": 62.5,
+      "Upper Fence": 218.5,
+      "N Outlier": 1,
+      "Outlier (%)": 0.08
+    },
+    "oldpeak": {
+      "Q1": 0.0,
+      "Q3": 1.6,
+      "IQR": 1.6,
+      "Lower Fence": -2.4,
+      "Upper Fence": 4.0,
+      "N Outlier": 11,
+      "Outlier (%)": 0.92
+    }
+  },
+  "catatan_leakage": "Tidak ditemukan indikasi data leakage. Semua fitur adalah pengukuran klinis pre-diagnosis.",
+  "class_imbalance_ratio": 1.12
+}
