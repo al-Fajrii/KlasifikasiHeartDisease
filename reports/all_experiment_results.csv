@@ -1,0 +1,10 @@
+Model,Nama Lengkap,Acc Train,Acc Test,Bal Acc,Recall,Precision,F1-Score,F1 Macro,AUC-ROC,TP,TN,FP,FN,Overfitting,Best Params
+Baseline,Baseline (Dummy),0.5531,0.5543,0.5,1.0,0.5543,0.7133,0.3567,0.5,102,0,82,0,Tidak,strategy=most_frequent
+KNN,KNN (k=5 euclidean),0.8733,0.8641,0.8595,0.902,0.8598,0.8804,0.847,0.9173,92,67,15,10,Tidak,n_neighbors=5 weights=uniform metric=euclidean
+KNN_Tuned,KNN Tuned manhattan-9-uniform,0.861,0.8696,0.8632,0.9216,0.8545,0.8868,0.8665,0.9231,94,66,16,8,Tidak,n_neighbors=9 weights=uniform metric=manhattan
+GaussianNB,Naive Bayes (GaussianNB),0.8406,0.8587,0.8522,0.9118,0.8455,0.8774,0.8553,0.8953,93,65,17,9,Tidak,var_smoothing=1e-09
+NB_Tuned,NB Tuned var_smoothing=3.16e-05,0.8406,0.8587,0.8522,0.9118,0.8455,0.8774,0.8553,0.8953,93,65,17,9,Tidak,var_smoothing=3.1622776601683795e-05
+SVM,SVM (rbf C=1 gamma=scale),0.8965,0.8587,0.8451,0.9706,0.8115,0.8839,0.8531,0.936,99,59,23,3,Tidak,kernel=rbf C=1 gamma=scale
+SVM_Tuned,SVM Tuned C=1 gamma=auto rbf,0.8747,0.8587,0.8451,0.9706,0.8115,0.8839,0.8531,0.9429,99,59,23,3,Tidak,C=1 gamma=auto kernel=rbf
+DecisionTree,Decision Tree (gini depth=None),1.0,0.7065,0.6923,0.8235,0.7,0.7568,0.7284,0.6923,84,46,36,18,Ya,criterion=gini max_depth=None
+DT_Tuned,DT Tuned entropy depth=4,0.861,0.6467,0.6108,0.9412,0.6194,0.7471,0.4688,0.7431,96,24,58,6,Tidak,criterion=entropy max_depth=4 min_samples_leaf=8 min_samples_split=2
